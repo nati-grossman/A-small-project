@@ -1,0 +1,9 @@
+
+<div class="card m-auto sizeCardPhoto" (click)="ClickPhoto(name.value)">
+    <img class="card-img-top sizeImgPhoto" [src]="photo['img']">
+    <input type="text" class="d-none" #name value="{{  photo['name'] }}">
+    <div class="card-body">
+        <p class="card-text text-center" id="description"> {{  photo['name'] }} </p>
+    </div>
+</div>
+

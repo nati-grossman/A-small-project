@@ -1,0 +1,14 @@
+
+.styleCentralCard {
+    width: 18rem; 
+    min-height: 200px;
+    background-color: aquamarine;
+}
+
+.sizeCentralCard {
+    height: 600px;
+}
+
+.styleNameCentralCard {
+    background-color: beige; padding: 10px;
+}

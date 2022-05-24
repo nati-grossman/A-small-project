@@ -1,0 +1,22 @@
+<div class="row m-0 p-0">
+
+    <div class="col-1">
+        <button class="mt-2 mx-4 p-3" style="height: 430px; background-color: aquamarine;" (click)="scroll(left)">
+            <i class="material-icons Small">chevron_left</i>
+        </button>
+    </div>
+    <div class="col-10">
+        <ul class="d-flex mt-2 overflow-hidden p-0" style="list-style-type: none;" id="stripPhotos">
+            <li *ngFor="let Photo of listPhotos;">
+                <app-photo [photo]=Photo (ClickPhotoEvent)="SelectedPhoto($event)"></app-photo>
+            </li>
+        </ul>
+    </div>
+
+    <div class="col-1">
+        <button class="mt-2 mx-4 p-3" style="height: 430px; background-color: aquamarine;" (click)="scroll(right)">
+            <i class="material-icons Small">chevron_right</i>
+        </button>
+    </div>
+
+</div>
